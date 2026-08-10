@@ -1,7 +1,7 @@
 interface:
-  display_name: "PPT Requirements Interview"
-  short_description: "Clarify PPT goals, audience, content, and delivery needs"
-  default_prompt: "Use $ppt-requirements-discovery to clarify my presentation requirements and produce a Presentation Brief."
+  display_name: "PPT需求访谈"
+  short_description: "通过结构化访谈澄清PPT目标、受众、内容与表达要求，并输出可执行Brief"
+  default_prompt: "使用 $ppt-requirements-discovery 帮我梳理这次PPT的真实需求，并输出 Presentation Brief。"
 
 policy:
   allow_implicit_invocation: true
