@@ -61,13 +61,31 @@ git clone https://github.com/rcrusoe88-bot/ppt-requirements-discovery.git \
 
 > 使用 $ppt-requirements-discovery 帮我梳理这次PPT的真实需求，并输出 Presentation Brief。
 
+### WorkBuddy（workbuddy/）
+
+本仓库附带 WorkBuddy 原生版本，位于 `workbuddy/` 子目录，frontmatter 已适配 WorkBuddy（含 `agent_created: true` 与中文触发词）。安装：
+
+```bash
+# Windows (PowerShell)
+xcopy /E /I workbuddy %USERPROFILE%\.workbuddy\skills\ppt-requirements-discovery
+
+# macOS / Linux
+cp -r workbuddy ~/.workbuddy/skills/ppt-requirements-discovery
+```
+
+安装后重启 WorkBuddy 生效。也可在 WorkBuddy 对话框中输入「导入技能」选择 `workbuddy/SKILL.md`。
+
 ## 项目结构
 
 ```
 ppt-requirements-discovery/
-├── SKILL.md            # 技能主文件：访谈流程、工作原则、Brief 模板
-└── agents/
-    └── openai.yaml     # OpenAI Agent 接口配置
+├── SKILL.md            # 技能主文件：访谈流程、工作原则、Brief 模板（codex / Claude Code 版）
+├── agents/
+│   └── openai.yaml     # OpenAI Agent 接口配置
+├── workbuddy/
+│   ├── SKILL.md        # WorkBuddy 适配版技能主文件
+│   └── README.md       # WorkBuddy 版安装说明
+└── README.md           # 本说明
 ```
 
 ## 适用场景
