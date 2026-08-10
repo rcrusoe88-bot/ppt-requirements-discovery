@@ -41,7 +41,41 @@
 
 ## 安装与使用
 
-### Claude Code
+支持两种安装方式：**💬 自然语言安装**（推荐，直接把话术说给 AI，让 AI 帮你装）与 **🖥️ 命令行安装**（手动执行命令）。
+
+### 💬 自然语言安装（推荐）
+
+直接把下方话术复制到对应工具的对话窗口发送即可，AI 会按指引完成安装并告诉你如何生效。
+
+**WorkBuddy**
+
+在 WorkBuddy 对话窗口粘贴：
+
+```
+帮我在 WorkBuddy 上安装 ppt-requirements-discovery 技能。
+技能文件在 https://github.com/rcrusoe88-bot/ppt-requirements-discovery 仓库的 workbuddy/ 子目录下，
+请装到我的个人技能目录（Windows：%USERPROFILE%\.workbuddy\skills\ppt-requirements-discovery，
+macOS/Linux：~/.workbuddy/skills/ppt-requirements-discovery），装完告诉我重启 WorkBuddy 生效。
+```
+
+如果你的 WorkBuddy 版本支持「导入技能」，也可以直接对它说“导入技能”，然后把 `workbuddy/SKILL.md` 文件拖给它。
+
+**Claude Code**
+
+在 Claude Code 对话窗口粘贴：
+
+```
+帮我在 Claude Code 上安装 ppt-requirements-discovery 技能。
+请把 https://github.com/rcrusoe88-bot/ppt-requirements-discovery 克隆到我的个人技能目录
+~/.claude/skills/ppt-requirements-discovery（Windows 对应 %USERPROFILE%\.claude\skills\ppt-requirements-discovery）。
+仓库根目录的 SKILL.md 就是 Claude Code 版。
+```
+
+AI 会执行 git clone 放到上述目录。仓库自带的 `workbuddy/`、`agents/` 子目录在 Claude Code 中会被忽略，不影响使用。安装后重启或新开会话即可自动加载。
+
+### 🖥️ 命令行安装
+
+**Claude Code**
 
 将本仓库复制到 Claude Code 的 skills 目录：
 
@@ -55,15 +89,13 @@ git clone https://github.com/rcrusoe88-bot/ppt-requirements-discovery.git \
 
 之后当用户提出「帮我做一个关于 X 的 PPT」这类需求时，Claude 会自动调用本技能开始需求访谈，也可手动唤起。
 
-### OpenAI Agent（agents/openai.yaml）
+**OpenAI Agent（agents/openai.yaml）**
 
 仓库附带 `agents/openai.yaml`，可作为 OpenAI 生态的自定义 Agent 配置，支持隐式调用（`allow_implicit_invocation: true`），默认提示词：
 
 > 使用 $ppt-requirements-discovery 帮我梳理这次PPT的真实需求，并输出 Presentation Brief。
 
-### WorkBuddy（workbuddy/）
-
-本仓库附带 WorkBuddy 原生版本，位于 `workbuddy/` 子目录，frontmatter 已适配 WorkBuddy（含 `agent_created: true` 与中文触发词）。安装：
+**WorkBuddy**
 
 ```bash
 # Windows (PowerShell)

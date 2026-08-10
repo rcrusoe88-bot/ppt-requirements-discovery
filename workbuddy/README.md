@@ -10,7 +10,20 @@
 
 ## 安装
 
-将 `workbuddy/` 目录整体拷贝到 WorkBuddy 的个人技能目录：
+**方式一：💬 自然语言安装（推荐）**
+
+在 WorkBuddy 对话窗口中直接粘贴以下话术：
+
+```
+帮我在 WorkBuddy 上安装 ppt-requirements-discovery 技能。
+文件来自 https://github.com/rcrusoe88-bot/ppt-requirements-discovery 仓库的 workbuddy/ 子目录，
+请装到我的个人技能目录（Windows：%USERPROFILE%\.workbuddy\skills\ppt-requirements-discovery，
+macOS/Linux：~/.workbuddy/skills/ppt-requirements-discovery），装完告诉我重启 WorkBuddy 生效。
+```
+
+也可以对 WorkBuddy 说「导入技能」，然后把本目录的 `SKILL.md` 文件拖给它。
+
+**方式二：🖥️ 命令行安装**
 
 ```bash
 # Windows (PowerShell)
@@ -20,7 +33,7 @@ xcopy /E /I workbuddy %USERPROFILE%\.workbuddy\skills\ppt-requirements-discovery
 cp -r workbuddy ~/.workbuddy/skills/ppt-requirements-discovery
 ```
 
-也可在 WorkBuddy 对话框中直接输入「导入技能」，选择本目录下的 `SKILL.md`。安装后重启 WorkBuddy 即可生效。
+安装后重启 WorkBuddy 即可生效，之后可在对话中手动指定 `@ppt-requirements-discovery` 调用。
 
 ## 触发
 
