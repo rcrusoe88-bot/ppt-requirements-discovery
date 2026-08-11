@@ -1,5 +1,16 @@
 # ppt-requirements-discovery
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/rcrusoe88-bot/ppt-requirements-discovery?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/stars/rcrusoe88-bot/ppt-requirements-discovery?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/rcrusoe88-bot/ppt-requirements-discovery?style=flat-square" alt="Last Commit">
+  <img src="https://img.shields.io/github/repo-size/rcrusoe88-bot/ppt-requirements-discovery?style=flat-square" alt="Repo Size">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=rcrusoe88-bot&repo=ppt-requirements-discovery&theme=vue&show_owner=true" alt="ppt-requirements-discovery 仓库数据">
+</p>
+
 > 动手做 PPT 之前，先花几分钟把需求聊清楚。
 
 **ppt-requirements-discovery** 是一个「PPT 需求访谈」技能（Skill）：通过结构化、多轮对话，把用户头脑中模糊的 PPT 想法，转化为一份经过确认、可直接交给 PPT 制作 Agent 执行的 **Presentation Brief**。
@@ -143,3 +154,12 @@ ppt-requirements-discovery/
 ## License
 
 [MIT](./LICENSE) © 2026 Reginald Crusoe
+
+---
+
+## 📊 作者 GitHub 数据
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rcrusoe88-bot&show_icons=true&theme=vue" alt="rcrusoe88-bot 的 GitHub 统计">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rcrusoe88-bot&layout=compact&theme=vue" alt="rcrusoe88-bot 的常用语言">
+</p>
